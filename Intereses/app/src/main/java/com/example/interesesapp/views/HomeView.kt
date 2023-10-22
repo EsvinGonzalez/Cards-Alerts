@@ -24,6 +24,7 @@ import com.example.interesesapp.components.MainButton
 import com.example.interesesapp.components.MainTextField
 import com.example.interesesapp.components.ShowInfoCards
 import com.example.interesesapp.components.SpaceH
+import com.example.interesesapp.viewmodels.PrestamoViewModel
 import java.math.BigDecimal
 import java.math.RoundingMode
 
@@ -85,7 +86,7 @@ fun ContentHomeView(paddingdValues: PaddingValues) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeView() {
+fun HomeView(viewModel: PrestamoViewModel) {
     Scaffold( topBar = {
         CenterAlignedTopAppBar(
             title = { Text(text = "Calculadora Prestamos", color = Color.White)},
